@@ -1,0 +1,10 @@
+C:\proyecto\Enfermeria\Enfermeria\bin\Debug\Enfermeria.exe.config
+C:\proyecto\Enfermeria\Enfermeria\bin\Debug\Enfermeria.exe
+C:\proyecto\Enfermeria\Enfermeria\bin\Debug\Enfermeria.pdb
+C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.csprojResolveAssemblyReference.cache
+C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.Properties.Resources.resources
+C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.csproj.GenerateResource.Cache
+C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.exe
+C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.pdb
+C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.agregarAlumnos.resources
+C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.Inicio.resources

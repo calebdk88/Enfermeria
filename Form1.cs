@@ -22,7 +22,7 @@ namespace Enfermeria
         private void Agregar_Click(object sender, EventArgs e)
         {
             agregarAlumnos Ventana =  new agregarAlumnos();
-            Ventana.WindowState = FormWindowState.Maximized;
+            Ventana.WindowState = FormWindowState.Normal;
             Ventana.MdiParent = this;
             Ventana.Show();
         }

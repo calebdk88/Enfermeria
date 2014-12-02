@@ -10,10 +10,15 @@ using System.Windows.Forms;
 //Agregamos la referencia de mysql
 using MySql.Data.MySqlClient;
 
+
+
 namespace Enfermeria
 {
+    
     public partial class agregarAlumnos : Form
     {
+        conexion coneccion;
+
         public agregarAlumnos()
         {
             InitializeComponent();
@@ -22,9 +27,9 @@ namespace Enfermeria
             txtApellidos.Focus();
         }
         //cadena de conexion a mysql
-        MySql.Data.MySqlClient.MySqlConnection coon;
-        string myConexion = "server=localhost;uid=root;pwd='';database=usuarios;";
-        
+        //MySql.Data.MySqlClient.MySqlConnection coon;
+        //string myConexion = "server=localhost;uid=root;pwd='';database=roles;";
+      
         private void agregarAlumnos_Load(object sender, EventArgs e)
         {
 
@@ -46,8 +51,10 @@ namespace Enfermeria
 
             try
             {
-                coon = new MySql.Data.MySqlClient.MySqlConnection(myConexion);
-                coon.Open();
+                //coon = new MySql.Data.MySqlClient.MySqlConnection(myConexion);
+                //coon.Open();
+                conexion conneccion = new conexion();
+                conexion.conectarme();
                 MessageBox.Show("Conexion correcta!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch(MySql.Data.MySqlClient.MySqlException ex)
@@ -57,9 +64,22 @@ namespace Enfermeria
             }
         }
 
+        //metodo para cerrar ventanas
+        private void Salir()
+    {
+        this.Close();
+    }
+
         private void button3_Click(object sender, EventArgs e)
         {
             Conectarme();
         }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Salir();
+        }
+
+        
     }
 }

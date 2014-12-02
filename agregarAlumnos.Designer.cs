@@ -40,6 +40,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.txtMatricula = new System.Windows.Forms.TextBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -151,12 +153,33 @@
             this.progressBar1.Size = new System.Drawing.Size(109, 23);
             this.progressBar1.TabIndex = 11;
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(767, 480);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 12;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(563, 217);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(111, 23);
+            this.btnActualizar.TabIndex = 13;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            // 
             // agregarAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(854, 515);
+            this.Controls.Add(this.btnActualizar);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.button3);
@@ -192,5 +215,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtMatricula;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }

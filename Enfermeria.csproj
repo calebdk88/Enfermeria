@@ -54,6 +54,7 @@
     <Compile Include="agregarAlumnos.Designer.cs">
       <DependentUpon>agregarAlumnos.cs</DependentUpon>
     </Compile>
+    <Compile Include="conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

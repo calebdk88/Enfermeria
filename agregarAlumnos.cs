@@ -17,9 +17,7 @@ namespace Enfermeria
     
     public partial class agregarAlumnos : Form
     {
-        conexion coneccion;
-
-        public agregarAlumnos()
+           public agregarAlumnos()
         {
             InitializeComponent();
             this.ControlBox = false;
@@ -53,8 +51,11 @@ namespace Enfermeria
             {
                 //coon = new MySql.Data.MySqlClient.MySqlConnection(myConexion);
                 //coon.Open();
+
                 conexion conneccion = new conexion();
                 conexion.conectarme();
+
+
                 MessageBox.Show("Conexion correcta!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch(MySql.Data.MySqlClient.MySqlException ex)

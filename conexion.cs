@@ -15,5 +15,13 @@ namespace Enfermeria
            conectar.Open();
            return conectar;
        }
+       
+        public static void agregar()
+       {
+           MySqlConnection conectar = new MySqlConnection("server=localhost; database=roles; Uid=root; pwd='';");
+           conectar.Open();
+
+           
+       }
     }
 }

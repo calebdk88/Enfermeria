@@ -55,8 +55,19 @@ namespace Enfermeria
                 conexion conneccion = new conexion();
                 conexion.conectarme();
 
+                   
+
 
                 MessageBox.Show("Conexion correcta!!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+              try
+              {
+                  conexion.desconectarme();
+
+              }
+                catch(Exception){
+
+                    MessageBox.Show("no me he desconectado");
+                }
             }
             catch(MySql.Data.MySqlClient.MySqlException ex)
             {

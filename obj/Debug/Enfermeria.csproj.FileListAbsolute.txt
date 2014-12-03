@@ -8,3 +8,6 @@ C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.exe
 C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.pdb
 C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.agregarAlumnos.resources
 C:\proyecto\Enfermeria\Enfermeria\obj\Debug\Enfermeria.Inicio.resources
+C:\Enfermeria\bin\Debug\Enfermeria.exe.config
+C:\Enfermeria\obj\Debug\Enfermeria.exe
+C:\Enfermeria\obj\Debug\Enfermeria.pdb

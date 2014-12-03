@@ -35,7 +35,7 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvlista = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.txtMatricula = new System.Windows.Forms.TextBox();
@@ -49,7 +49,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -115,16 +115,16 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Nombres";
             // 
-            // dataGridView1
+            // dgvlista
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 260);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(662, 243);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvlista.AllowUserToAddRows = false;
+            this.dgvlista.AllowUserToDeleteRows = false;
+            this.dgvlista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvlista.Location = new System.Drawing.Point(12, 260);
+            this.dgvlista.Name = "dgvlista";
+            this.dgvlista.ReadOnly = true;
+            this.dgvlista.Size = new System.Drawing.Size(662, 243);
+            this.dgvlista.TabIndex = 7;
             // 
             // label4
             // 
@@ -260,7 +260,7 @@
             this.Controls.Add(this.txtMatricula);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvlista);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
@@ -271,7 +271,7 @@
             this.Name = "agregarAlumnos";
             this.Text = "Agregar Alumnos";
             this.Load += new System.EventHandler(this.agregarAlumnos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,7 +286,7 @@
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvlista;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtMatricula;

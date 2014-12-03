@@ -30,10 +30,55 @@ namespace Enfermeria
       
         private void agregarAlumnos_Load(object sender, EventArgs e)
         {
+            conexion.conectarme();
+            string list = "select * from alumnos";
+            MySqlDataAdapter ad = new MySqlDataAdapter(list, conexion.conectarme());
+            DataTable dt = new DataTable();
+
+            try
+            {
+                ad.Fill(dt);
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("A ocurrido un Error: " + ex.ToString(), Application.ProductName + " - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            stylos();
+
+            dgvlista.DataSource = dt;
+
+            ajustarDGV();
+           
 
         }
 
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ///////////////////////////// Metodos///////////////////////////////////
+
+
+
+
+      //metodo para auto ajustar los datos en el DGV
+          private void ajustarDGV()
+        {
+            dgvlista.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+
+
         //metodo para limpiar las cajas de texto
         private void limpiar()
         {
@@ -42,6 +87,19 @@ namespace Enfermeria
             txtMatricula.Text = "";
 
             txtApellidos.Focus();
+        }
+
+        private void stylos()
+        {
+            dgvlista.ColumnHeadersDefaultCellStyle.Font = new Font("Tahoma", 9, FontStyle.Bold, GraphicsUnit.Point);
+            dgvlista.ColumnHeadersDefaultCellStyle.BackColor = SystemColors.ControlDark;
+            dgvlista.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.Single;
+            dgvlista.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvlista.DefaultCellStyle.Font = new Font("Tahoma", 8, FontStyle.Regular, GraphicsUnit.Point);
+            dgvlista.DefaultCellStyle.BackColor = Color.Empty;
+            dgvlista.AlternatingRowsDefaultCellStyle.BackColor = SystemColors.ControlLight;
+            dgvlista.CellBorderStyle = DataGridViewCellBorderStyle.Single;
+            dgvlista.GridColor = SystemColors.ControlDarkDark;
         }
 
         private void Conectarme()

@@ -19,8 +19,7 @@ namespace Enfermeria
        //metodo para agregar elementos a la base de datos.
         public static void agregar()
        {
-           MySqlConnection conectar = new MySqlConnection();
-           conectar.Open();
+           conectarme();
            MySqlCommand cmd = new MySqlCommand ("INSERT INTO alumnos (matricula,nombre,apellido,grado,grupo,correo) VALUES(@MAT, @NOM, @APE, @GRA, @GRU, @COR)", conectarme());
        }
         //metodo para cerrar la coneccion a la base de datos.
@@ -30,5 +29,15 @@ namespace Enfermeria
             conectar.Close();
             
         }
+        public static void  listar()
+        {
+
+            string cadena1 = "select nombre_subtipos from dessubtipos ORDER BY nombre_subtipos ASC";
+            MySqlDataAdapter da1 = new MySqlDataAdapter(cadena1, xd);
+           
+        }
+
+
+        public static string xd { get; set; }
     }
 }

@@ -22,3 +22,14 @@ C:\Proyecto\Enfermeria\obj\Debug\Enfermeria.Inicio.resources
 C:\Proyecto\Enfermeria\obj\Debug\Enfermeria.Properties.Resources.resources
 C:\Proyecto\Enfermeria\obj\Debug\Enfermeria.csproj.GenerateResource.Cache
 C:\Proyecto\Enfermeria\obj\Debug\Enfermeria.ConsultarAlumnos.resources
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\bin\Debug\Enfermeria.exe.config
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.exe
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.pdb
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\bin\Debug\Enfermeria.exe
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\bin\Debug\Enfermeria.pdb
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.csprojResolveAssemblyReference.cache
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.agregarAlumnos.resources
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.ConsultarAlumnos.resources
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.Inicio.resources
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.Properties.Resources.resources
+C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.csproj.GenerateResource.Cache

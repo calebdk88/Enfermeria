@@ -33,3 +33,6 @@ C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.Consult
 C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.Inicio.resources
 C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.Properties.Resources.resources
 C:\Users\caleb\Documents\GitHub\proyecto\Enfermeria\obj\Debug\Enfermeria.csproj.GenerateResource.Cache
+C:\Users\JD\Documents\GitHub\Enfermeria\bin\Debug\Enfermeria.exe.config
+C:\Users\JD\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.exe
+C:\Users\JD\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.pdb

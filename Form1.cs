@@ -27,6 +27,14 @@ namespace Enfermeria
             Ventana.Show();
         }
 
+        private void Consultas_Click(object sender, EventArgs e)
+        {
+            ConsultarAlumnos Ventana = new ConsultarAlumnos();
+            Ventana.WindowState = FormWindowState.Normal;
+            Ventana.MdiParent = this;
+            Ventana.Show();
+        }
+
        
     }
 }

@@ -150,6 +150,11 @@ namespace Enfermeria
             Salir();
         }
 
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
         
     }
 }

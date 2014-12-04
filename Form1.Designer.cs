@@ -34,7 +34,7 @@
             this.unoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Agregar = new System.Windows.Forms.ToolStripMenuItem();
             this.dosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sssssToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Consultas = new System.Windows.Forms.ToolStripMenuItem();
             this.tresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ssssssToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionAutomaticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,23 +79,24 @@
             // Agregar
             // 
             this.Agregar.Name = "Agregar";
-            this.Agregar.Size = new System.Drawing.Size(116, 22);
+            this.Agregar.Size = new System.Drawing.Size(152, 22);
             this.Agregar.Text = "Agregar";
             this.Agregar.Click += new System.EventHandler(this.Agregar_Click);
             // 
             // dosToolStripMenuItem
             // 
             this.dosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sssssToolStripMenuItem});
+            this.Consultas});
             this.dosToolStripMenuItem.Name = "dosToolStripMenuItem";
             this.dosToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.dosToolStripMenuItem.Text = "Busquedas";
             // 
-            // sssssToolStripMenuItem
+            // Consultas
             // 
-            this.sssssToolStripMenuItem.Name = "sssssToolStripMenuItem";
-            this.sssssToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.sssssToolStripMenuItem.Text = "Consultas";
+            this.Consultas.Name = "Consultas";
+            this.Consultas.Size = new System.Drawing.Size(152, 22);
+            this.Consultas.Text = "Consultas";
+            this.Consultas.Click += new System.EventHandler(this.Consultas_Click);
             // 
             // tresToolStripMenuItem
             // 
@@ -128,7 +129,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Inicio";
             this.Text = "Menu De Inicio";
-          
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -145,7 +145,7 @@
         private System.Windows.Forms.ToolStripMenuItem dosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem Agregar;
-        private System.Windows.Forms.ToolStripMenuItem sssssToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Consultas;
         private System.Windows.Forms.ToolStripMenuItem ssssssToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;

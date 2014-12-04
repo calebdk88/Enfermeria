@@ -55,6 +55,12 @@
       <DependentUpon>agregarAlumnos.cs</DependentUpon>
     </Compile>
     <Compile Include="conexion.cs" />
+    <Compile Include="ConsultarAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAlumnos.Designer.cs">
+      <DependentUpon>ConsultarAlumnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +71,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="agregarAlumnos.resx">
       <DependentUpon>agregarAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarAlumnos.resx">
+      <DependentUpon>ConsultarAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

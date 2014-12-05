@@ -26,6 +26,8 @@ namespace Enfermeria
 
             // Metodo autofiltrado iniciado al cargar la forma
             AutoFiltradoDGV();
+
+            
         }
 
         // Declare esta variable hasta arriba debido a que la utilizo 2 veces
@@ -84,6 +86,7 @@ namespace Enfermeria
                 
                 // Al final, se realiza el autocompletado de cadenas de la fuente que seleccionamos
                 txtConsultas.AutoCompleteCustomSource = coll;
+                
         }
 
         void AutoFiltradoDGV()
@@ -116,6 +119,7 @@ namespace Enfermeria
                 MessageBox.Show(ex.Message);
 
             }
+            ajustarDGV();
         }
 
         private void txtConsultas_TextChanged(object sender, EventArgs e)
@@ -134,27 +138,12 @@ namespace Enfermeria
 
         private void ConsultarAlumnos_Load(object sender, EventArgs e)
         {
-
+            ajustarDGV();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //BOTON MOSTRAR LISTA
-            conexion.conectarme();
-            string list = "select * from alumnos";
-            MySqlDataAdapter ad = new MySqlDataAdapter(list, conexion.conectarme());
-            DataTable dt = new DataTable();
-
-            try
-            {
-                ad.Fill(dt);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("A ocurrido un Error: " + ex.ToString(), Application.ProductName + " - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            ajustarDGV();
+           
         }
 
         //METODO
@@ -163,6 +152,45 @@ namespace Enfermeria
         {
             //METODO PARA AJUSTAR LAS COLUMNAS 
             dgvConsultas.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+
+        private void dgvConsultas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //BOTON CONSULTAR POR MATRICULA
+            conexion.conectarme();
+            try
+            {
+                int matricula = int.Parse(txtMatricula.Text);
+
+                string sql = string.Format("SELECT matricula, nombre, apellido, idgrado, idgrupo, correo from alumnos where matricula like'" + matricula + "%'");
+
+                MySqlCommand cmd = new MySqlCommand(sql, conexion.conectarme());
+                MySqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.HasRows == true)
+                {
+                    DataTable dt = new DataTable();
+                    dt.Load(dr);
+                    dgvConsultas.DataSource = dt;
+
+                }
+                else
+                {
+                    MessageBox.Show("no hay nada para mostrar");
+                }
+            }
+            catch
+            {
+
+                MessageBox.Show("Favor de introducir la matricula del alumno");
+
+            }
+
         }
        
     }

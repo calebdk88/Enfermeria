@@ -47,3 +47,11 @@ C:\Users\JD\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.ConsultarAlumnos.re
 C:\Users\JD\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.Inicio.resources
 C:\Users\JD\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.Properties.Resources.resources
 C:\Users\JD\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.csproj.GenerateResource.Cache
+C:\Users\ArturoBZ\Documents\GitHub\Enfermeria\bin\Debug\Enfermeria.exe
+C:\Users\ArturoBZ\Documents\GitHub\Enfermeria\bin\Debug\Enfermeria.pdb
+C:\Users\ArturoBZ\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.csprojResolveAssemblyReference.cache
+C:\Users\ArturoBZ\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.agregarAlumnos.resources
+C:\Users\ArturoBZ\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.ConsultarAlumnos.resources
+C:\Users\ArturoBZ\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.Inicio.resources
+C:\Users\ArturoBZ\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.Properties.Resources.resources
+C:\Users\ArturoBZ\Documents\GitHub\Enfermeria\obj\Debug\Enfermeria.csproj.GenerateResource.Cache

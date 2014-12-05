@@ -131,7 +131,39 @@ namespace Enfermeria
             dgvConsultas.DataSource = DV;
 
         }
-        
-        
+
+        private void ConsultarAlumnos_Load(object sender, EventArgs e)
+        {
+
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //BOTON MOSTRAR LISTA
+            conexion.conectarme();
+            string list = "select * from alumnos";
+            MySqlDataAdapter ad = new MySqlDataAdapter(list, conexion.conectarme());
+            DataTable dt = new DataTable();
+
+            try
+            {
+                ad.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("A ocurrido un Error: " + ex.ToString(), Application.ProductName + " - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            ajustarDGV();
+        }
+
+        //METODO
+
+        private void ajustarDGV()
+        {
+            //METODO PARA AJUSTAR LAS COLUMNAS 
+            dgvConsultas.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+        }
+       
+    }
 }
